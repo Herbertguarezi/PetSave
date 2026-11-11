@@ -1,4 +1,4 @@
-const email = document.querySelector(".email");
+    const email = document.querySelector(".email");
 const senha = document.querySelector(".senha");
 const btn_entrar = document.querySelector(".btn-entrar") 
 
@@ -12,9 +12,10 @@ function login(event){
         if (email.value == "admin@petsave.com" && senha.value == "Admin_"){
             window.location.href = "../index.html";
         }else{
-            window.alert("Senha Incorreta")
+            window.alert("Dados Incorretos")
         }
     }
 }
+
 
 btn_entrar.addEventListener("click", login)

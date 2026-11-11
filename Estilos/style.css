@@ -57,11 +57,11 @@ input{
     display: block;
     border: 1px solid #FDBC43;
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 15px;
     width: 100%;
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
 html, body {
