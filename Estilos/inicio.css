@@ -1,0 +1,86 @@
+body{
+    padding-top: 72px;    /* altura da nav, para o conteúdo não ficar por baixo dela */
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;          /* ocupa a largura toda */
+    box-sizing: border-box;
+    background-color: #f8f1eb;
+    border-bottom: 1px solid #eee7e0;
+    z-index: 100;
+}
+
+.nav-container{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.nav-a{
+    position: relative;
+}
+
+.nav-a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FDBC43;
+    top: 25px;
+    transition: ease-in-out 0.3s;
+}
+
+.nav-a:hover{
+    text-shadow: 0 0 0.5px currentColor, 0 0 0.5px currentColor;
+}
+
+.nav-a:hover::before{
+    width: 100%;
+}
+
+.background{
+    background-color: #f8f1eb;
+}
+
+.container{
+    padding-top: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cards-aviso{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-aviso{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+.card-aviso:hover{
+    transform: scale(1.02);
+}
+
+.cards-petSave{
+    display: flex;
+    gap: 20px;
+}
