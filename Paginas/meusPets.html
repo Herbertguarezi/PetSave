@@ -3,18 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PetSave</title>
+    <title>PetSave - Meus Pets</title>
+    <link rel="icon" href="../Media/icones-petsave/icones-petsave/svg/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Oi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Estilos/style.css" />
+    <link rel="stylesheet" href="../Estilos/style.css" />
+    <link rel="stylesheet" href="../Estilos/inicio.css" />
+    <link rel="stylesheet" href="../Estilos/pets.css" />
   </head>
   <body>
-    Hello World!
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="../index.html"><h1 class="titulo-nav">PetSave</h1></a>
+        <ul class="nav-btn">
+          <li>
+            <a href="../index.html" class="fonte-r nav-a">Inicio</a>
+          </li>
+          <li>
+            <a href="./meusPets.html" class="fonte-r nav-a atual">Meus Pets</a>
+          </li>
+          <li>
+            <a href="./avisos.html" class="fonte-r nav-a">Avisos</a>
+          </li>
+          <li>
+            <a href="./petsPerdidos.html" class="fonte-r nav-a">Pets Perdidos</a>
+          </li>
+          <li>
+            <a href="./sobreNos.html" class="fonte-r nav-a">Sobre Nós</a>
+          </li>
+          <li>
+            <a href="./meuPerfil.html" class="btn-amarelo userName">Login </a>
+          </li>
+          <li>
+            <a
+              class="fonte-s"
+              style="cursor: pointer"
+              data-auth="logado"
+              id="sair"
+              >Sair</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="background">
+      <div class="container">
+        <div class="titulo-section">
+          <h1 class="titulo-dark-xl">Meus Pets</h1>
+          <button class="btn-amarelo" id="btn_adicionar_pet">Adicionar Pet</button>
+        </div>
+        <div class="cards-perdido" id="lista-pets">
+          <div class="card-perdido">
+            <img
+              src="../Media/pets/pet1.jpeg"
+              alt="Cachorro salsicha com bandana rosa"
+              class="card-perdido-foto"
+            />
+            <div class="card-perdido-txt">
+              <h3 class="fonte-l">Mel</h3>
+              <p class="fonte-r">Cachorro · Salsicha</p>
+            </div>
+          </div>
+          <div class="card-perdido">
+            <img
+              src="../Media/pets/pet2.jpeg"
+              alt="Gato branco com manchas cinza"
+              class="card-perdido-foto"
+            />
+            <div class="card-perdido-txt">
+              <h3 class="fonte-l">Nuvem</h3>
+              <p class="fonte-r">Gato · SRD</p>
+            </div>
+          </div>
+          <div class="card-perdido">
+            <img
+              src="../Media/pets/pet3.jpeg"
+              alt="Cachorro preto de orelhas em pé"
+              class="card-perdido-foto"
+            />
+            <div class="card-perdido-txt">
+              <h3 class="fonte-l">Thor</h3>
+              <p class="fonte-r">Cachorro · Pastor Belga</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="background-dark">
+      <div class="container">
+        <div class="footer">
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">PetSave</h2>
+            <p class="fonte-s" style="color: #f8f1eb">
+              Uma rede de apoio pelo bem-estar animal.
+            </p>
+          </div>
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">Contato</h2>
+            <p class="fonte-s" style="color: #f8f1eb">(11) 4002-8922</p>
+            <p class="fonte-s" style="color: #f8f1eb">contato@petsave.com.br</p>
+          </div>
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">Faça uma doação</h2>
+            <div class="footer-pix">
+              <img src="../Media/pix.jpeg" alt="pix" class="footer-pix-imagem" />
+              <div class="pix-info">
+                <p class="fonte-s" style="color: #f8f1eb">Chave Pix:</p>
+                <p class="fonte-s" style="color: #f8f1eb">Pix AQUI</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">Desenvolvido por</h2>
+            <div class="footer-nomes">
+              <p class="fonte-s" style="color: #f8f1eb">Bruno</p>
+              <p class="fonte-s" style="color: #f8f1eb">·</p>
+              <p class="fonte-s" style="color: #f8f1eb">Felipe</p>
+              <p class="fonte-s" style="color: #f8f1eb">·</p>
+              <p class="fonte-s" style="color: #f8f1eb">Herbert</p>
+              <p class="fonte-s" style="color: #f8f1eb">·</p>
+              <p class="fonte-s" style="color: #f8f1eb">Pandora</p>
+              <p class="fonte-s" style="color: #f8f1eb">·</p>
+              <p class="fonte-s" style="color: #f8f1eb">Yany</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="../Js/script.js" type="module"></script>
-    <script src="./Js/autenticacao.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  flex: 1;
+}
+
+.aviso-tags {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.aviso-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 5px;
+}
+
+.aviso-dados strong {
+  color: #474747;
+}

@@ -10,7 +10,9 @@ if (sessao) {
 } else {
   userName.addEventListener("click", (event) => {
     event.preventDefault();
-    window.location.href = "./Paginas/login.html";
+    window.location.href = window.location.pathname.includes("/Paginas/")
+      ? "./login.html"
+      : "./Paginas/login.html";
   });
 }
 

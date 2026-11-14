@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetSave - Avisos</title>
+    <link rel="icon" href="../Media/icones-petsave/icones-petsave/svg/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Oi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Estilos/style.css" />
+    <link rel="stylesheet" href="../Estilos/inicio.css" />
+    <link rel="stylesheet" href="../Estilos/avisos.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="../index.html"><h1 class="titulo-nav">PetSave</h1></a>
+        <ul class="nav-btn">
+          <li>
+            <a href="../index.html" class="fonte-r nav-a">Inicio</a>
+          </li>
+          <li>
+            <a href="./meusPets.html" class="fonte-r nav-a">Meus Pets</a>
+          </li>
+          <li>
+            <a href="./avisos.html" class="fonte-r nav-a atual">Avisos</a>
+          </li>
+          <li>
+            <a href="./petsPerdidos.html" class="fonte-r nav-a">Pets Perdidos</a>
+          </li>
+          <li>
+            <a href="./sobreNos.html" class="fonte-r nav-a">Sobre Nós</a>
+          </li>
+          <li>
+            <a href="./meuPerfil.html" class="btn-amarelo userName">Login </a>
+          </li>
+          <li>
+            <a
+              class="fonte-s"
+              style="cursor: pointer"
+              data-auth="logado"
+              id="sair"
+              >Sair</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="background">
+      <div class="container">
+        <div class="titulo-section">
+          <h1 class="titulo-dark-xl">Avisos</h1>
+          <button class="btn-amarelo" id="btn_adicionar_aviso">Adicionar Aviso</button>
+        </div>
+        <div class="cards-aviso" id="lista-avisos">
+          <div class="card">
+            <div class="aviso-tags">
+              <h3 class="btn-amarelo-s" style="background-color: #29c7a2">Saúde animal</h3>
+              <h3 class="btn-amarelo-s" style="background-color: #f8f1eb">
+                Evento comunitário
+              </h3>
+            </div>
+            <h2 class="titulo-dark-l">Campanha de Vacinação Pet</h2>
+            <p class="fonte-r bold">Campanha para incentivar a vacinação e proteger cães e gatos contra doenças.</p>
+            <p class="fonte-r">
+              Traga seu melhor amigo para um dia de cuidado e prevenção! Nossa campanha de vacinação busca incentivar a saúde e o bem-estar dos animais. Os atendimentos e as vacinas disponíveis serão definidos pela equipe.
+            </p>
+            <ul class="aviso-dados">
+              <li class="fonte-s"><strong>Categoria:</strong> Saúde e vacinação</li>
+              <li class="fonte-s"><strong>Data:</strong> 22/11/2026</li>
+              <li class="fonte-s"><strong>Horário:</strong> 09h às 15h</li>
+              <li class="fonte-s"><strong>Local:</strong> Centro Comunitário PetSave</li>
+              <li class="fonte-s"><strong>Endereço:</strong> Rua das Flores, 150 – Centro</li>
+              <li class="fonte-s"><strong>Organizador:</strong> Equipe PetSave</li>
+              <li class="fonte-s"><strong>Público-alvo:</strong> Tutores de cães e gatos</li>
+              <li class="fonte-s"><strong>Inscrição:</strong> Não obrigatória</li>
+              <li class="fonte-s"><strong>Vagas:</strong> Atendimento por ordem de chegada</li>
+              <li class="fonte-s"><strong>Custo:</strong> Gratuito</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="aviso-tags">
+              <h3 class="btn-amarelo-s" style="background-color: #f2609f">Bem-estar animal</h3>
+              <h3 class="btn-amarelo-s" style="background-color: #f8f1eb">
+                Evento comunitário
+              </h3>
+            </div>
+            <h2 class="titulo-dark-l">Castração Responsável</h2>
+            <p class="fonte-r bold">Ação de conscientização e incentivo à castração responsável de cães e gatos.</p>
+            <p class="fonte-r">
+              A castração é um ato de amor e responsabilidade! Participe da nossa campanha e conheça os benefícios da castração para a saúde dos animais e o controle populacional. As vagas são limitadas e os procedimentos dependem de avaliação veterinária e dos critérios de participação.
+            </p>
+            <ul class="aviso-dados">
+              <li class="fonte-s"><strong>Categoria:</strong> Saúde e bem-estar</li>
+              <li class="fonte-s"><strong>Data:</strong> 29/11/2026</li>
+              <li class="fonte-s"><strong>Horário:</strong> 08h às 16h</li>
+              <li class="fonte-s"><strong>Local:</strong> Clínica Veterinária Parceira</li>
+              <li class="fonte-s"><strong>Endereço:</strong> Avenida Central, 250 – Centro</li>
+              <li class="fonte-s"><strong>Organizador:</strong> Equipe PetSave</li>
+              <li class="fonte-s"><strong>Público-alvo:</strong> Tutores de cães e gatos</li>
+              <li class="fonte-s"><strong>Inscrição:</strong> Obrigatória</li>
+              <li class="fonte-s"><strong>Vagas:</strong> 10 animais</li>
+              <li class="fonte-s"><strong>Custo:</strong> Gratuito para os selecionados</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="aviso-tags">
+              <h3 class="btn-amarelo-s">Adoção responsável</h3>
+              <h3 class="btn-amarelo-s" style="background-color: #f8f1eb">
+                Evento comunitário
+              </h3>
+            </div>
+            <h2 class="titulo-dark-l">Feirinha de Adoção PetSave</h2>
+            <p class="fonte-r bold">Um encontro para aproximar animais resgatados de famílias que desejam adotar.</p>
+            <p class="fonte-r">
+              Seu novo melhor amigo pode estar esperando por você! Venha conhecer nossos cães e gatos disponíveis para adoção e tenha a oportunidade de transformar uma vida. Todos os interessados passarão por uma entrevista e avaliação para garantir uma adoção responsável.
+            </p>
+            <ul class="aviso-dados">
+              <li class="fonte-s"><strong>Categoria:</strong> Adoção de animais</li>
+              <li class="fonte-s"><strong>Data:</strong> 06/12/2026</li>
+              <li class="fonte-s"><strong>Horário:</strong> 10h às 16h</li>
+              <li class="fonte-s"><strong>Local:</strong> Praça da Amizade</li>
+              <li class="fonte-s"><strong>Endereço:</strong> Rua do Parque, 100 – Centro</li>
+              <li class="fonte-s"><strong>Organizador:</strong> Comunidade PetSave</li>
+              <li class="fonte-s"><strong>Público-alvo:</strong> Pessoas interessadas em adotar cães e gatos</li>
+              <li class="fonte-s"><strong>Inscrição:</strong> Não obrigatória para visitantes, mas haverá preenchimento de formulário no local</li>
+              <li class="fonte-s"><strong>Vagas:</strong> 15 animais disponíveis para adoção</li>
+              <li class="fonte-s"><strong>Custo:</strong> Taxa de adoção simbólica para ajuda de custo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="background-dark">
+      <div class="container">
+        <div class="footer">
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">PetSave</h2>
+            <p class="fonte-s" style="color: #f8f1eb">
+              Uma rede de apoio pelo bem-estar animal.
+            </p>
+          </div>
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">Contato</h2>
+            <p class="fonte-s" style="color: #f8f1eb">(11) 4002-8922</p>
+            <p class="fonte-s" style="color: #f8f1eb">contato@petsave.com.br</p>
+          </div>
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">Faça uma doação</h2>
+            <div class="footer-pix">
+              <img src="../Media/pix.jpeg" alt="pix" class="footer-pix-imagem" />
+              <div class="pix-info">
+                <p class="fonte-s" style="color: #f8f1eb">Chave Pix:</p>
+                <p class="fonte-s" style="color: #f8f1eb">Pix AQUI</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">Desenvolvido por</h2>
+            <div class="footer-nomes">
+              <p class="fonte-s" style="color: #f8f1eb">Bruno</p>
+              <p class="fonte-s" style="color: #f8f1eb">·</p>
+              <p class="fonte-s" style="color: #f8f1eb">Felipe</p>
+              <p class="fonte-s" style="color: #f8f1eb">·</p>
+              <p class="fonte-s" style="color: #f8f1eb">Herbert</p>
+              <p class="fonte-s" style="color: #f8f1eb">·</p>
+              <p class="fonte-s" style="color: #f8f1eb">Pandora</p>
+              <p class="fonte-s" style="color: #f8f1eb">·</p>
+              <p class="fonte-s" style="color: #f8f1eb">Yany</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../Js/script.js" type="module"></script>
+  </body>
+</html>

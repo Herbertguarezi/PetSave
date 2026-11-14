@@ -1,0 +1,12 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  flex: 1;
+}
+
+.cards-perdido {
+  padding-top: 20px;
+}

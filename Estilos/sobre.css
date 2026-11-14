@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  flex: 1;
+}
+
+.card-sobre {
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+}
+
+.card-sobre h2,
+.card-sobre p {
+  color: #222;
+}
+
+.cards-sobre {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}

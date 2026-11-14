@@ -1,0 +1,46 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.background {
+  flex: 1;
+}
+
+.perfil {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.perfil-card {
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.perfil-foto {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #fdbc43;
+  padding: 45px;
+}
+
+.perfil-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.perfil-form {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.perfil-btn {
+  width: auto;
+  padding: 10px 30px;
+}
