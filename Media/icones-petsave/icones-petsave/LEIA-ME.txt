@@ -1,8 +1,0 @@
-Ícones PetSave (SVG, 24x24)
-
-- Traço de 1,8 px com pontas arredondadas; a cor vem de 'currentColor' (defina a cor com CSS: color).
-- Nas telas usei #222 (escuro) e branco sobre o roxo.
-- 'patinha-preenchida' é a versão sólida usada nas fotos de exemplo, em #474747.
-- Abra preview.html para ver todos.
-
-Usos: valores (coracao, osso, gato, cachorro, patinha, peixe); apresentação da Página Inicial (patinha, sino, coracao, pessoas, lupa); barra de abas mobile (inicio, patinha, lupa, info, usuario).
