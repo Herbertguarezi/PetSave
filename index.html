@@ -25,7 +25,7 @@
       <div class="nav-container">
         <a href="./index.html"><h1 class="titulo-nav">PetSave</h1></a>
         <ul class="nav-btn">
-          <li><a href="./index.html" class="fonte-r nav-a">Inicio</a></li>
+          <li><a href="./index.html" class="fonte-r nav-a atual">Inicio</a></li>
           <li>
             <a href="./Paginas/meusPets.html" class="fonte-r nav-a"
               >Meus Pets</a
@@ -42,8 +42,17 @@
             >
           </li>
           <li>
-            <a href="./Paginas/meuPerfil.html" class="btn-amarelo"
-              >Meu Perfil</a
+            <a href="./Paginas/meuPerfil.html" class="btn-amarelo userName"
+              >Login
+            </a>
+          </li>
+          <li>
+            <a
+              class="fonte-s"
+              style="cursor: pointer"
+              data-auth="logado"
+              id="sair"
+              >Sair</a
             >
           </li>
         </ul>
@@ -237,11 +246,44 @@
     </section>
     <footer class="background-dark">
       <div class="container">
-        <div>
-            <h2 class="fonte-l">PetSave</h2>
+        <div class="footer">
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">PetSave</h2>
+            <p class="fonte-s" style="color: #f8f1eb;">Uma rede de apoio pelo bem-estar animal.</p>
+          </div>
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">Contato</h2>
+            <p class="fonte-s" style="color: #f8f1eb;">(11) 4002-8922</p>
+            <p class="fonte-s" style="color: #f8f1eb;">contato@petsave.com.br</p>
+          </div>
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">Faça uma doação</h2>
+            <div class="footer-pix">
+              <img src="./Media/pix.jpeg" alt="pix" class="footer-pix-imagem"/>
+              <div class="pix-info">
+              <p class="fonte-s" style="color: #f8f1eb;">Chave Pix:</p>
+              <p class="fonte-s" style="color: #f8f1eb;">Pix AQUI</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="fonte-l" style="color: #fdbc43">Desenvolvido por</h2>
+            <div class="footer-nomes">
+              <p class="fonte-s" style="color: #f8f1eb;">Bruno</p>
+              <p class="fonte-s" style="color: #f8f1eb;">·</p>
+              <p class="fonte-s" style="color: #f8f1eb;">Felipe</p>
+              <p class="fonte-s" style="color: #f8f1eb;">·</p>
+              <p class="fonte-s" style="color: #f8f1eb;">Herbert</p>
+              <p class="fonte-s" style="color: #f8f1eb;">·</p>
+              <p class="fonte-s" style="color: #f8f1eb;">Pandora</p>
+              <p class="fonte-s" style="color: #f8f1eb;">·</p>
+              <p class="fonte-s" style="color: #f8f1eb;">Yany</p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-    <script src="../Js/script.js"></script>
+    <script src="../Js/script.js" type="module"></script>
+    <script src="./Js/autenticacao.js" type="module"></script>
   </body>
 </html>

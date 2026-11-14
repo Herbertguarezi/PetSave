@@ -2,71 +2,6 @@ body {
   padding-top: 72px; /* altura da nav, para o conteúdo não ficar por baixo dela */
 }
 
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; /* ocupa a largura toda */
-  box-sizing: border-box;
-  background-color: #f8f1eb;
-  border-bottom: 1px solid #eee7e0;
-  z-index: 100;
-}
-
-.nav-container {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-btn {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-}
-
-.nav-a {
-  position: relative;
-}
-
-.nav-a::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background-color: #fdbc43;
-  top: 25px;
-  transition: ease-in-out 0.3s;
-}
-
-.nav-a:hover {
-  text-shadow:
-    0 0 0.5px currentColor,
-    0 0 0.5px currentColor;
-}
-
-.nav-a:hover::before {
-  width: 100%;
-}
-
-.background {
-  background-color: #f8f1eb;
-}
-
-.background-dark {
-  background-color: #474747;
-}
-
-.container {
-  padding-top: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
 .cards-aviso {
   margin-top: 20px;
   display: grid;
@@ -119,39 +54,40 @@ body {
   transform: scale(0.8);
   transform: translateX(5px);
 }
-.cards-perdido{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px   ;
+.cards-perdido {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 40px;
 }
 
-.card-perdido{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 10px;
-    border-radius: 20px;
-    overflow: hidden;
-    background: #fff;
+.card-perdido {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
 }
 
-.card-perdido-foto{
-    display: block;
-    width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    object-position: 50% 30%;
-    transition: aspect-ratio 0.3s ease-in-out;
+.card-perdido-foto {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+  object-position: 50% 30%;
+  transition: aspect-ratio 0.3s ease-in-out;
 }
 
-.card-perdido:hover .card-perdido-foto{
-    aspect-ratio: 1/1;
+.card-perdido:hover .card-perdido-foto {
+  aspect-ratio: 1/1;
 }
 
-.card-perdido-txt{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    align-items: start;
-    padding: 10px 20px;
+.card-perdido-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: start;
+  padding: 10px 20px;
 }
